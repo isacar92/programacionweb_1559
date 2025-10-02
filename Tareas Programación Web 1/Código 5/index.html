@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"=>
+    <meta name="author" content="Olmedo Sámano Emiliano Isacar">
+    <title>Listas y formularios</title>
+</head>
+
+<body>
+    <!--Título y Subtítulo-->
+    <h1>Listas y formularios</h1>
+
+    <hr>
+
+    <!--Listas Desordenadas (Manera de estructurar info en manera visuall)-->
+    <h2>Listas</h2>
+    <ul>
+        <li>Leche</li>
+        <li>Huevos</li>
+        <li>Carne</li>
+        <li>Pollo</li>
+        <li>Jamón</li>
+    </ul>
+
+    <!--Listas Ordenadas-->
+    <ol type="1" start="2"> <!--El tipo de numero es arabico y empieza en la lista 2 :3-->
+        <li>Primero</li>
+        <li>Segundo</li>
+        <li>Tercero</li>
+        <li>Cuarto</li>
+        <li>Quinto</li>
+    </ol>
+
+    <hr>
+
+    <!--Listas de Definiciones (Sirve para definir cosas)-->
+    <h2>Listas de Definicones</h2>
+    <dl>
+        <dt>HTML</dt> <!--Se escribe primero lo que se quiere definir -->
+        <dd>Es un lenguaje de marcado de hipertexto</dd> <!--Despues viene su definición-->
+
+        <dt>CSS</dt>
+        <dd>Hojas de estilo de cascada</dd>
+
+        <dt>JS</dt>
+        <dd>JavaScript</dd>
+    </dl>
+
+    <hr>
+
+    <!--Listas anidadas (Listas en listas)-->
+    <h2>Listas anidadas</h2>
+    <p>Desarrollo Web :3</p>
+    <ul>
+        <li>Frontend
+            <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+            </ol>
+        </li>
+
+        <li>Backend
+            <ol>
+            <li>NodeJs</li>
+            <li>MySQL</li>
+            <li>Debian</li>
+            </ol>
+        </li>
+    </ul>
+
+    <hr>
+
+    <!--Formulario-->
+    <h2>Formularios</h2>
+    <p>Formulario de inicio de sesión</p>
+    <form action="" method="post"> <!--Action: Ruta o archivo que maneja la conexion entre servidor y el formulario de la pagina-->
+
+        <label for="username">Nombre de usuario:</label> <!--for indica que se espera que se l-->
+        <input type="text" id="username" name="username" placeholder="Introduce tu nombre" required>
+        <br><br>
+
+        <label for="password">Contraseña:</label>
+        <input type="text"  id="password" name="password" placeholder="Introduce tu contrasela uwu">
+        <br>
+
+        <button type="submit">Enviar</button> <!--Botón para enviar datos (submit indica que el tipo de boton es para enviar datos)-->
+    </form>
+
+</body>
+</html>
