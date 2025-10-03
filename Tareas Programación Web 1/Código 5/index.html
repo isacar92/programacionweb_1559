@@ -82,10 +82,89 @@
         <br><br>
 
         <label for="password">Contraseña:</label>
-        <input type="text"  id="password" name="password" placeholder="Introduce tu contrasela uwu">
+        <input type="password"  id="password" name="password" placeholder="Introduce tu contrasela uwu" required>
         <br>
-
         <button type="submit">Enviar</button> <!--Botón para enviar datos (submit indica que el tipo de boton es para enviar datos)-->
+
+    </form>
+        <br>
+        <hr>
+        <p>Formulario con campo de entrada de varias líenas</p> <br>
+        <form action="/validacion.php" method="post">
+            <label for="name">Nombre:</label>
+            <input type="text" name="name" id="name" required placeholder="Introduce tu nombre">
+            <br>
+            <label for="opinion">Comentarios:</label>
+            <textarea name="opinion" id="opinion" rows="4" cols="40" placeholder="Escribe tu opinión"></textarea> <!--Rows y Cols indican el tamaño del comentario-->
+            <br>
+            <button type="submit">Enviar datos</button>
+        </form>
+
+        <hr>
+        <h2>Formularios con listas desplegadas</h2>
+
+    <form action="/seleccion_bebidas_postres" method="post">
+         <label for="bebidas">Bebidas:</label>
+        <select name="bebidas" id="bebidas">
+                <option value="limonada">Limonada</option>
+                <option value="four">Four Loko</option>
+                <option value="caña">Caña</option>
+                <option value="naranjada">Naranjada</option>
+                <option value="agua bendita">Agua bendita</option>
+            </select>
+        <br>
+        <label for="postres">Postres:</label>
+        <select name="postres" id="postres">
+            <option value="pay de limon">Pay de limón</option>
+            <option value="galleta">Galleta</option>
+            <option value="dulce">Dulce</option>
+        </select>
+        <br>
+        <button type="submit">Enviar opciones respondidas</button>
+    </form>
+    
+    <hr>
+    <h2>Formularios complejos con distinto tipo de datos</h2>
+    <form action="/datos_usuario" method="post">
+        <fieldset>
+            <legend>Nombre</legend> <!--Encuadra toda la sección en la página-->
+            <label for="nombre">Nombre(s):</label>
+            <input type="text" id="nombre" name="name">
+            <br>
+            <label for="ap_paterno">Apellido Paterno:</label>
+            <input type="text" id="ap_paterno" name="ap_paterno" required>
+            <br>
+            <label for="ap_materno">Apellido Materno:</label>
+            <input type="text" id="ap_materno" name="ap_materno" required>
+        </fieldset>
+        <br>
+        <fieldset> 
+            <legend>Otros datos</legend> <!--Encuadra toda la sección en la página-->
+            <label for="fecha de nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha de nacimiento" name="fecha de nacimiento" required>
+            <br>
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" required>
+            <br>
+            <label for="no_cuenta">No. de cuenta::</label>
+            <input type="text" id="no_cuenta" name="no_cuenta" minlength="8" maxlength="9" required placeholder="Ingresa tu No. de cuenta UNAM">
+            <br>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+        </fieldset>
+        <br>
+        <fieldset> 
+            <legend>Dirección</legend>
+            <label for="calle">Calle:</label>
+            <input type="text" id="calle" name="calle" value="Emiliano Zapata" required>
+            <br>
+            <label for="no_casa">No. de casa:</label>
+            <input type="number" id="no_cuenta" name="no_cuenta" required placeholder="Ingresa tu No. de casa">
+            <br>
+            <label for="colonia">Colonia:</label>
+            <input type="text" id="colonia" name="colonia" required>
+        </fieldset>
+        <button type="submit">Enviar</button>
     </form>
 
 </body>
