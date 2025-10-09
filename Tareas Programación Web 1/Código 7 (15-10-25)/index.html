@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Olmedo Sámano Emiliano Isacar">
+    <title>Fundamentos de CSS</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!--Estilos internos sin CSS
+    <style>
+        h1{
+            color:mediumseagreen;
+        }
+    </style>
+    -->
+</head>
+<body>
+    <section>
+        <h1 id="encabezado" >Formas de agregar estilos a nuestra página web</h1>
+        <hr>
+        <article>
+            <h2>Estilos en línea</h2>
+            <p>
+                Estos estilos en línea se agregan directamente en el elemento
+                html, mediante el atributo <code>style</code>
+            </p>
+            <p style="background-color: yellow;">Este parrafo tiene estilo :3</p>
+        </article>
+        <hr>
+        <article class="estilos-internos">
+            <h2>Estilos internos</h2>
+            <p>Estos estilos se agregan en el mismo archivo HTML, dentro de
+                la etiqueta <code>&lt;head&gt;</code> y se utiliza la etiqueta <code>&lt;style&gt;</code>
+            </p>
+        </article>
+        <hr>
+        <article>
+            <h2>Estilos Externos</h2>
+            <p>Estos estilos son los que se recomiendan, ya que tienen
+                modularidad, facil mantenimiento, orden, eficiencia entre otras
+                ventajas, para agregar una hoja de estilos externa, dentro de la etiqueta
+                <code>&lt;head&gt;</code>, se va a utilizar la etiqueta <code>&lt;link&gt;</code>
+            </p>
+        </article>
+        <hr>
+        <article>
+            <h2>Diferencias entre clases e id en CSS</h2>
+            <p>Clases: Se ocupan cuando hay que reutilizar estilos que se
+                repiten a lo largo de la página
+            </p>
+            <br>
+            <p>ID: Se ocupan cuando vamos a aplicar estilos especificos a
+                elementos o secciones única en nuestra página, y para navegar a
+                secciones de nuestra misma página
+            </p>
+        </article>
+    </section>
+</body>
+</html>

@@ -1,0 +1,19 @@
+/*Para cambiar el color de toda la página*/
+body{
+    background-color: bisque;
+}
+
+/*Para cambiar elementos los article*/
+article{
+    background-color: aquamarine;
+}
+
+/*Para cambiar elementos clase*/
+.estilos-internos{
+    background-color: rgb(228, 90, 90);
+}
+
+/*Para cambiar elementos con ID*/
+#encabezado{
+    color:rgba(25, 0, 255, 0.411)
+}
