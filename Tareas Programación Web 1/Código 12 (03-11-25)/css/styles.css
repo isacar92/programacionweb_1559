@@ -1,0 +1,112 @@
+
+htmL{
+    font-size: 62.5%;
+}
+
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(61, 204, 57));
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: rgb(255, 0, 0);
+    height:100vh;
+}
+
+#encabezado{
+    border: 0.2em outset silver;
+    position: fixed;
+    /* top: 100em; */
+    width: 100%;
+    /* top: 2em; */
+}
+
+.contenedor-logo{
+    width: 5%;
+    height: 7em;
+    /* border: 0.2em outset silver; */
+}
+
+.contenedor-logo img{
+    padding-top: em;
+    width: 12em;
+    height: 12em;
+    /* min-width max-,width
+    min-height, max-height*/
+    object-fit: contain;
+    background-color: rgba(234, 255, 248, 0.521);
+    object-position: center;
+    border: 0.8em inset rgb(27, 94, 0);
+    border-radius: 100%;
+    /* border-top: 10em; */ 
+    filter: brightness(1.5);
+}
+
+.elementos-pos{
+    border: 0.2em outset lightslategray;
+    padding: 0.3em;
+    position: relative;
+    /* top : 7.5; */
+}
+
+.contenedor-img{
+    width: 15em;
+    height: 15em;
+}
+
+.contenedor-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    
+}
+
+.img-mundo{
+    position: relative;
+    top: 15em;
+    left: 7em;
+    z-index: 1;
+}
+
+.img-mp3{
+    position: absolute;
+    top: 4em;
+    left: 10em;
+    z-index: 20;
+}
+
+.img-spotify{
+    position: relative;
+    z-index: 10;
+}
+
+.img-mundo img{
+    filter: blur(0.1em);
+}
+
+.img-spotify{
+    filter: brightness(1.5);
+}
+
+.img-aero img{
+    filter: contrast(2);
+}
+
+ /* Va a permitit la manipulaciòn de imagenes. ofreciendo una gama de efectos como:
+ *blur(): Aplica desenfoque
+ *brightness(): Ajusta el brillo de un elemento
+ *contrast(): Modifica el contraste  
+ *grayscale(): Convierte al elemento a escala de grises
+ *invert:(): Invierte los colores el elemento
+ *sepia(): Aplica el efecto de tono sepia al elemento 
+ */
+
+.mierda{
+    font-size: xx-large;
+    font-family: "Orbitron", sans-serif;
+    position: relative;
+    left:15em;
+    bottom:1.5em;
+    color: rgba(7, 87, 0, 0.699);
+}
